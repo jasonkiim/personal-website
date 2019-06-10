@@ -1,0 +1,45 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "amd": true,
+    "jasmine": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "func-names": "off",
+    "one-var": "off",
+    "no-var": "off",
+    "no-param-reassign": "off",
+    "comma-dangle": "off",
+    "space-before-function-paren": "off",
+    "no-plusplus": "off",
+    "no-alert": "off",
+    "no-fallthrough": "off",
+    "no-multi-assign": "off",
+    "no-use-before-define": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/prop-types": [2],
+    "react/forbid-prop-types": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-curly-spacing": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "react/require-default-props": "off",
+    "react/prefer-es6-class": [2, "never"],
+    "react/no-find-dom-node": "off",
+    "jsx-a11y/media-has-caption": "off"
+  },
+  "globals": {
+    "Transifex": false,
+    "analytics": false,
+    "asyncRequire": false,
+  }
+}
