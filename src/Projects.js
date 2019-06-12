@@ -2,10 +2,10 @@ const React = require('react');
 const createReactClass = require('create-react-class');
 
 const mainList = require('./list');
-const ExperiencePaper = require('./ExperiencePaper');
+const ProjectsPaper = require('./ProjectsPaper');
 
-const ExperienceLayout = createReactClass({
-  displayName: 'ExperienceLayout',
+const Projects = createReactClass({
+  displayName: 'Projects',
   getInitialState() {
     return {
       fading: true
@@ -27,16 +27,15 @@ const ExperienceLayout = createReactClass({
         }`}
       >
         <div className="exp-projects-container">
-          {mainList.experienceList.map((experience, i) => (
-            <ExperiencePaper
+          {mainList.projectList.map((project, i) => (
+            <ProjectsPaper
               key={i}
-              description_1={experience.description_1}
-              description_2={experience.description_2}
-              description_3={experience.description_3}
-              description_4={experience.description_4}
-              job={experience.job}
-              image={experience.img}
-              title={experience.title}
+              dialogTitle={project.dialogTitle}
+              image={project.img}
+              title={project.title}
+              technologies={project.technologies}
+              description={project.description}
+              projectLink={project.projectLink}
             />
           ))}
         </div>
@@ -45,4 +44,4 @@ const ExperienceLayout = createReactClass({
   }
 });
 
-module.exports(ExperienceLayout);
+module.exports(Projects);

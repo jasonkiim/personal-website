@@ -1,52 +1,76 @@
-/*eslint-disable */
-import resume from './images/JasonKimF2018.pdf';
+const React = require('react');
+const createReactClass = require('create-react-class');
+const PropTypes = require('prop-types');
 
-import React, { Component } from 'react';
-
-export default class NavBar extends Component {
+const NavBar = createReactClass({
+  displayName: 'NavBar',
+  propTypes: {
+    handleFadeChange: PropTypes.func.isRequired,
+    handleStepChange: PropTypes.func.isRequired,
+    top: PropTypes.string.isRequired,
+    right: PropTypes.string.isRequired,
+    left: PropTypes.string.isRequired,
+    bottom: PropTypes.string.isRequired,
+    delay: PropTypes.integer.isRequired,
+    fading: PropTypes.bool.isRequired
+  },
   componentDidMount() {
-    this.time = setTimeout(() => { this.props.handleFadeChange(); }, this.props.delay);
-  }
+    const { handleFadeChange, delay } = this.props;
 
+    this.time = setTimeout(() => {
+      handleFadeChange();
+    }, delay);
+  },
   componentDidUpdate() {
-    this.time = setTimeout(() => { this.props.handleFadeChange(); }, this.props.delay);
-  }
-
-
+    const { handleFadeChange, delay } = this.props;
+    this.time = setTimeout(() => {
+      handleFadeChange();
+    }, delay);
+  },
   render() {
+    const { fading, handleStepChange, top, right, left, bottom } = this.props;
     return (
       <div className="nav-bar">
         <button
+          type="button"
           className="item"
-          id={`${this.props.fading ? 'waitingTop' : 'top'}`}
-          onClick={()=>this.props.handleStepChange(this.props.top)}
+          attr="awef"
+          id={`${fading ? 'waitingTop' : 'top'}`}
+          onClick={() => handleStepChange(top)}
         >
-            {this.props.top}
+          {top}
         </button>
-        <a
+        <button
+          type="button"
           className="item"
-          id={`${this.props.fading ? 'waitingRight' : 'right'}`}
-          onClick={()=>this.props.handleStepChange(this.props.right)}
+          id={`${fading ? 'waitingRight' : 'right'}`}
+          onClick={() => handleStepChange(right)}
         >
-          {this.props.right}
-        </a>
-        <a
+          {right}
+        </button>
+        <button
+          type="button"
           className="item"
-          id={`${this.props.fading ? 'waitingLeft' : 'left'}`}
-          href={resume}
+          id={`${fading ? 'waitingLeft' : 'left'}`}
+          href={require('./images/JasonKimF2018.pdf')}
           target="_blank"
+          rel="noopener noreferrer"
         >
-          {this.props.left}
-        </a>
-        <a
+          {left}
+        </button>
+        <button
+          type="button"
           className="item"
-          id={`${this.props.fading ? 'waitingBottom' : 'bottom'}`}
+          id={`${fading ? 'waitingBottom' : 'bottom'}`}
           href="https://www.instagram.com/jason_kimm/"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          {this.props.bottom}
-        </a>
+          {bottom}
+        </button>
       </div>
     );
   }
-}
+});
+
+module.exports(NavBar);
