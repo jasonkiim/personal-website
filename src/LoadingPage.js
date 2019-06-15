@@ -1,6 +1,5 @@
 const React = require('react');
 const createReactClass = require('create-react-class');
-const IconButton = require('material-ui/IconButton');
 
 const LoadingPage = createReactClass({
   displayName: 'LoadingPage',
@@ -87,50 +86,22 @@ const LoadingPage = createReactClass({
               className={`${
                 fadingLogo1 ? 'home-logos-fading' : 'home-logos-faded'
               }`}
-            >
-              <IconButton
-                iconClassName="fa fa-linkedin"
-                href="https://www.linkedin.com/in/jasonkiim/"
-                tooltip="LinkedIn"
-                target="_blank"
-              />
-            </span>
+            ></span>
             <span
               className={`${
                 fadingLogo2 ? 'home-logos-fading' : 'home-logos-faded'
               }`}
-            >
-              <IconButton
-                iconClassName="fa fa-envelope"
-                href="mailto:e53kim@edu.uwaterloo.ca"
-                tooltip="Contact Me!"
-                target="_blank"
-              />
-            </span>
+            ></span>
             <span
               className={`${
                 fadingLogo3 ? 'home-logos-fading' : 'home-logos-faded'
               }`}
-            >
-              <IconButton
-                iconClassName="fa fa-github"
-                href="https://github.com/jasonkiim"
-                tooltip="View GitHub"
-                target="_blank"
-              />
-            </span>
+            ></span>
             <span
               className={`${
                 fadingLogo4 ? 'home-logos-fading' : 'home-logos-faded'
               }`}
-            >
-              <IconButton
-                iconClassName="fa fa-instagram"
-                href="https://www.instagram.com/jason_kimm/"
-                tooltip="Instagram"
-                target="_blank"
-              />
-            </span>
+            ></span>
           </div>
         </div>
       </React.Fragment>
@@ -138,4 +109,4 @@ const LoadingPage = createReactClass({
   }
 });
 
-module.exports(LoadingPage);
+module.exports = LoadingPage;

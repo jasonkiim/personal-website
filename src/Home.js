@@ -1,6 +1,5 @@
 const React = require('react');
 const createReactClass = require('create-react-class');
-const IconButton = require('material-ui/IconButton');
 
 const Home = createReactClass({
   displayName: 'Home',
@@ -51,53 +50,31 @@ const Home = createReactClass({
               fadingLogo1 ? 'home-logos-fading' : 'home-logos-faded'
             }`}
           >
-            <IconButton
-              iconClassName="fa fa-linkedin"
-              href="https://www.linkedin.com/in/jasonkiim/"
-              tooltip="LinkedIn"
-              target="_blank"
-            />
+            asdf
           </span>
           <span
             className={`${
               fadingLogo2 ? 'home-logos-fading' : 'home-logos-faded'
             }`}
           >
-            <IconButton
-              iconClassName="fa fa-envelope"
-              href="mailto:e53kim@edu.uwaterloo.ca"
-              tooltip="Contact Me!"
-              target="_blank"
-            />
+            asdf
           </span>
           <span
             className={`${
               fadingLogo3 ? 'home-logos-fading' : 'home-logos-faded'
             }`}
-          >
-            <IconButton
-              iconClassName="fa fa-github"
-              href="https://github.com/jasonkiim"
-              tooltip="View GitHub"
-              target="_blank"
-            />
-          </span>
+            asdf
+          ></span>
           <span
             className={`${
               fadingLogo4 ? 'home-logos-fading' : 'home-logos-faded'
             }`}
-          >
-            <IconButton
-              iconClassName="fa fa-instagram"
-              href="https://www.instagram.com/jason_kimm/"
-              tooltip="Instagram"
-              target="_blank"
-            />
-          </span>
+            asdf
+          ></span>
         </div>
       </div>
     );
   }
 });
 
-module.exports(Home);
+module.exports = Home;

@@ -6,12 +6,11 @@ const NavBar = require('./NavBar');
 const Home = require('./Home');
 const Experience = require('./Experience');
 const Projects = require('./Projects');
-const Photography = require('./Photography');
 
 const styles = require('./styles/App.css');
 
-const PersonalWebsiteLayout = createReactClass({
-  displayName: 'PersonalWebsiteLayout',
+const PersonalWebsite = createReactClass({
+  displayName: 'PersonalWebsite',
   getInitialState() {
     return {
       step: 0,
@@ -113,7 +112,6 @@ const PersonalWebsiteLayout = createReactClass({
               left="RESUME"
               delay={400}
             />
-            <Photography {...this.state} />
           </React.Fragment>
         )}
       </div>
@@ -121,4 +119,4 @@ const PersonalWebsiteLayout = createReactClass({
   }
 });
 
-module.exports = PersonalWebsiteLayout;
+module.exports = PersonalWebsite;

@@ -44,4 +44,4 @@ const Projects = createReactClass({
   }
 });
 
-module.exports(Projects);
+module.exports = Projects;

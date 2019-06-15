@@ -11,7 +11,7 @@ const NavBar = createReactClass({
     right: PropTypes.string.isRequired,
     left: PropTypes.string.isRequired,
     bottom: PropTypes.string.isRequired,
-    delay: PropTypes.integer.isRequired,
+    delay: PropTypes.integer,
     fading: PropTypes.bool.isRequired
   },
   componentDidMount() {
@@ -73,4 +73,4 @@ const NavBar = createReactClass({
   }
 });
 
-module.exports(NavBar);
+module.exports = NavBar;
