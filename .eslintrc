@@ -1,10 +1,13 @@
 {
-  "extends": [
-    "airbnb",
-    "prettier"
-  ],
+  "extends": ["airbnb", "prettier"],
   "plugins": [
-    "prettier"
+    "prettier",
+    [
+      "react-css-modules",
+      {
+        "option": "value"
+      }
+    ]
   ],
   "env": {
     "browser": true,
@@ -40,6 +43,6 @@
   "globals": {
     "Transifex": false,
     "analytics": false,
-    "asyncRequire": false,
+    "asyncRequire": false
   }
 }

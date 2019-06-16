@@ -1,0 +1,14 @@
+.listItemImageWrapper {
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.listItemImageWrapper img {
+  background-size: cover;
+  width: 70%;
+  height: 70%;
+}
+
+.rightHalf {
+  text-align: left;
+}

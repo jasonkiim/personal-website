@@ -3,11 +3,9 @@ const createReactClass = require('create-react-class');
 const classNames = require('classnames');
 
 const mainList = require('./list');
-const styles = require('./styles/Experience.css');
-const flexStyles = require('./styles/FlexStyles.css');
+const styles = require('./styles/Experience.module.css');
+const flexStyles = require('./styles/FlexStyles.module.css');
 
-console.log(styles);
-console.log(flexStyles.flex);
 const ExperienceLayout = createReactClass({
   displayName: 'ExperienceLayout',
   getInitialState() {
@@ -24,9 +22,15 @@ const ExperienceLayout = createReactClass({
     return experienceList.map(item => (
       <div className={styles.experienceContainer}>
         <div className={flexStyles.flexRow}>
-          <div className={classNames(flexStyles.flexHalf)}>{item.img}</div>
           <div className={classNames(flexStyles.flexHalf)}>
-            {item.description_1}
+            <div className={styles.listItemImageWrapper}>
+              <img alt={item.title} src={item.img} />
+            </div>
+          </div>
+          <div className={classNames(flexStyles.flexHalf, styles.rightHalf)}>
+            {item.description_1} {item.description_2}
+            {item.description_3}
+            {item.description_4}
           </div>
         </div>
       </div>
