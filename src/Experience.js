@@ -1,8 +1,10 @@
 const React = require('react');
 const createReactClass = require('create-react-class');
+const classNames = require('classnames');
 
 const mainList = require('./list');
-const ExperiencePaper = require('./ExperiencePaper');
+const styles = require('./styles/Experience.css');
+const flexStyles = require('./styles/FlexStyles.css');
 
 const ExperienceLayout = createReactClass({
   displayName: 'ExperienceLayout',
@@ -16,6 +18,20 @@ const ExperienceLayout = createReactClass({
       this.setState({ fading: false });
     }, 100);
   },
+  renderExperienceList(experienceList) {
+    return experienceList.map(item => (
+      <div className={styles.experienceContainer}>
+        <div className={flexStyles.flexRow}>
+          <div className={classNames(flexStyles.flexHalf, styles.leftHalf)}>
+            {item.img}
+          </div>
+          <div className={classNames(flexStyles.flexHalf, styles.rightHalf)}>
+            {item.description_1}
+          </div>
+        </div>
+      </div>
+    ));
+  },
   render() {
     const { fading } = this.state;
     return (
@@ -27,18 +43,7 @@ const ExperienceLayout = createReactClass({
         }`}
       >
         <div className="exp-projects-container">
-          {mainList.experienceList.map((experience, i) => (
-            <ExperiencePaper
-              key={i}
-              description1={experience.description_1}
-              description2={experience.description_2}
-              description3={experience.description_3}
-              description4={experience.description_4}
-              job={experience.job}
-              image={experience.img}
-              title={experience.title}
-            />
-          ))}
+          {this.renderExperienceList(mainList.experienceList)}
         </div>
       </div>
     );
