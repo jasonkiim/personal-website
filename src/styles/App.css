@@ -132,11 +132,6 @@ img {
   vertical-align: middle;
   z-index: 9999;
   color: #1a1a1a;
-}
-
-.item:hover {
-  font-size: 15px;
-  letter-spacing: 10px;
   cursor: pointer;
 }
 
@@ -183,7 +178,7 @@ button {
 }
 
 #left {
-  height: 95vh;
+  top: 35vh;
   left: 50px;
   transition: all 1.5s;
   width: 10px;

@@ -47,16 +47,16 @@ const NavBar = createReactClass({
         >
           {right}
         </button>
-        <button
+        <a
           type="button"
           className="item"
           id={`${fading ? 'waitingLeft' : 'left'}`}
-          href="./images/JasonKimF2018.pdf"
+          href={require('./images/JasonKimF2018.pdf')}
           target="_blank"
           rel="noopener noreferrer"
         >
           {left}
-        </button>
+        </a>
         <a
           type="button"
           className="item"
