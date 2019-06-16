@@ -1,6 +1,9 @@
 const React = require('react');
 const createReactClass = require('create-react-class');
 
+const { FontAwesomeIcon } = require('@fortawesome/react-fontawesome');
+const { faCoffee } = require('@fortawesome/free-solid-svg-icons');
+
 const Home = createReactClass({
   displayName: 'Home',
   getInitialState() {
@@ -50,27 +53,29 @@ const Home = createReactClass({
               fadingLogo1 ? 'home-logos-fading' : 'home-logos-faded'
             }`}
           >
-            asdf
+            <FontAwesomeIcon icon={faCoffee} />
           </span>
           <span
             className={`${
               fadingLogo2 ? 'home-logos-fading' : 'home-logos-faded'
             }`}
           >
-            asdf
+            <FontAwesomeIcon icon={faCoffee} />
           </span>
           <span
             className={`${
               fadingLogo3 ? 'home-logos-fading' : 'home-logos-faded'
             }`}
-            asdf
-          ></span>
+          >
+            <FontAwesomeIcon icon={faCoffee} />
+          </span>
           <span
             className={`${
               fadingLogo4 ? 'home-logos-fading' : 'home-logos-faded'
             }`}
-            asdf
-          ></span>
+          >
+            <FontAwesomeIcon icon={faCoffee} />
+          </span>
         </div>
       </div>
     );

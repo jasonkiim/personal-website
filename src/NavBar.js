@@ -34,7 +34,6 @@ const NavBar = createReactClass({
         <button
           type="button"
           className="item"
-          attr="awef"
           id={`${fading ? 'waitingTop' : 'top'}`}
           onClick={() => handleStepChange(top)}
         >
@@ -52,22 +51,22 @@ const NavBar = createReactClass({
           type="button"
           className="item"
           id={`${fading ? 'waitingLeft' : 'left'}`}
-          href={require('./images/JasonKimF2018.pdf')}
+          href="./images/JasonKimF2018.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
           {left}
         </button>
-        <button
+        <a
           type="button"
           className="item"
           id={`${fading ? 'waitingBottom' : 'bottom'}`}
-          href="https://www.instagram.com/jason_kimm/"
+          href="https://www.instagram.com/pprzzi_/"
           target="_blank"
           rel="noopener noreferrer"
         >
           {bottom}
-        </button>
+        </a>
       </div>
     );
   }
