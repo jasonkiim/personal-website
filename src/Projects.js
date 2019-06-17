@@ -1,8 +1,12 @@
 const React = require('react');
 const createReactClass = require('create-react-class');
+const classNames = require('classnames');
+const { FontAwesomeIcon } = require('@fortawesome/react-fontawesome');
+const { faGithub } = require('@fortawesome/free-brands-svg-icons');
 
 const mainList = require('./list');
-const ProjectsPaper = require('./ProjectsPaper');
+const styles = require('./styles/Projects.module.css');
+const flexStyles = require('./styles/FlexStyles.module.css');
 
 const Projects = createReactClass({
   displayName: 'Projects',
@@ -16,6 +20,40 @@ const Projects = createReactClass({
       this.setState({ fading: false });
     }, 100);
   },
+  renderProjectsList(projectsList) {
+    return projectsList.map(item => (
+      <div className={styles.experienceContainer}>
+        <div className={flexStyles.flexRow}>
+          <div className={classNames(flexStyles.flexHalfLeft)}>
+            <div className={styles.listItemImageWrapper}>
+              <img alt={item.projectName} src={item.img} />
+            </div>
+          </div>
+          <div
+            className={classNames(flexStyles.flexHalfRight, styles.rightHalf)}
+          >
+            <div className={styles.projectName}>
+              {item.projectName}
+              {item.projectLink && (
+                <a
+                  href={item.projectLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={classNames(styles.projectLinkIcon)}
+                >
+                  <FontAwesomeIcon icon={faGithub} size="1x" />
+                </a>
+              )}
+            </div>
+            <div className={styles.technologies}>{item.technologies}</div>
+            <div className={styles.descriptions}>
+              <p>{item.description}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    ));
+  },
   render() {
     const { fading } = this.state;
     return (
@@ -27,17 +65,7 @@ const Projects = createReactClass({
         }`}
       >
         <div className="exp-projects-container">
-          {mainList.projectList.map((project, i) => (
-            <ProjectsPaper
-              key={i}
-              dialogTitle={project.dialogTitle}
-              image={project.img}
-              title={project.title}
-              technologies={project.technologies}
-              description={project.description}
-              projectLink={project.projectLink}
-            />
-          ))}
+          {this.renderProjectsList(mainList.projectList)}
         </div>
       </div>
     );

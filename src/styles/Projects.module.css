@@ -1,0 +1,37 @@
+.listItemImageWrapper {
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.listItemImageWrapper img {
+  background-size: cover;
+  width: 70%;
+  height: 70%;
+}
+
+.rightHalf {
+  text-align: left;
+}
+
+.projectName {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+}
+
+.technologies {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.descriptions {
+  margin-bottom: 1rem;
+}
+
+.projectLinkIcon {
+  float: right;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
