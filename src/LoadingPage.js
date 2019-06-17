@@ -73,7 +73,7 @@ const LoadingPage = createReactClass({
         >
           <img
             className={`${change ? 'logo' : 'logo-faded'}`}
-            src={require('./images/logoBlue.png')}
+            src={require('./assets/logoBlue.png')}
             alt="asdf"
           />
           <div
@@ -85,7 +85,7 @@ const LoadingPage = createReactClass({
         <div className={`${fading ? 'home-fading' : 'home-faded'}`}>
           <img
             className="logo"
-            src={require('./images/logoBlack.png')}
+            src={require('./assets/logoBlack.png')}
             alt="Asdasdf"
           />
           <div className="home-logos">

@@ -48,7 +48,7 @@ const Home = createReactClass({
       <div className={`${fading ? 'home-fading' : 'home-faded'}`}>
         <img
           className="logo"
-          src={require('./images/logoBlack.png')}
+          src={require('./assets/logoBlack.png')}
           alt="awef"
         />
         <div className="home-logos">

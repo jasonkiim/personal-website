@@ -1,7 +1,7 @@
 module.exports = {
   experienceList: [
     {
-      img: require('./images/formlabs.png'),
+      img: require('./assets/formlabs.png'),
       companyName: 'Formlabs',
       jobTitle: 'Full Stack Developer Intern',
       fromTo: 'Sep 2018 - Sep 2019',
@@ -13,7 +13,7 @@ module.exports = {
         'Integrated Kafka into core web infrastructure - streamlined printer requests into multiple Kafka topics, created core consumer group for data consumption to the API, as well centralized Kafka Connect instance from Kafka to production Amazon RDS database'
     },
     {
-      img: require('./images/ecobee.png'),
+      img: require('./assets/ecobee.png'),
       companyName: 'ecobee',
       jobTitle: 'Full Stack Developer Intern',
       fromTo: 'Jan 2018 - April 2018',
@@ -25,7 +25,7 @@ module.exports = {
         'Implemented metrics monitoring system by constructing JMX, Prometheus, and Grafana instances as part of Docker containers'
     },
     {
-      img: require('./images/chefhero.png'),
+      img: require('./assets/chefhero.png'),
       companyName: 'ChefHero',
       jobTitle: 'Full Stack Developer Intern',
       fromTo: 'May 2017 - Aug 2017',
@@ -39,7 +39,7 @@ module.exports = {
         'Integrated analytics architecture using Google Analytics, and a live Intercom chatbot to provide interactive user feedback'
     },
     {
-      img: require('./images/roguewave.png'),
+      img: require('./assets/roguewave.png'),
       companyName: 'Rogue Wave Software',
       jobTitle: 'Automation QA Developer Intern',
       fromTo: 'Sep 2016 - Dec 2016',
@@ -54,7 +54,7 @@ module.exports = {
   ],
   projectList: [
     {
-      img: require('./images/emotiontunes.png'),
+      img: require('./assets/emotiontunes.png'),
       title: 'EMOTION TUNES',
       dialogTitle: 'EmotionTunes',
       technologies: 'React, Material-UI, HTML5/CSS3, Meteor.js',
@@ -63,7 +63,7 @@ module.exports = {
       projectLink: 'https://github.com/jasonkiim/emotion-tunes'
     },
     {
-      img: require('./images/ootc.png'),
+      img: require('./assets/ootc.png'),
       title: '#OOTC',
       dialogTitle: '#OOTC',
       technologies: 'React, Bootstrap, HTML5/CSS3, Meteor.js',
@@ -72,7 +72,7 @@ module.exports = {
     },
 
     {
-      img: require('./images/FinalProject1A/1.png'),
+      img: require('./assets/FinalProject1A/1.png'),
       title: 'COLOR SORTER',
       dialogTitle: 'Color Sorter',
       technologies: 'Lego NXT, Robot C',
@@ -81,7 +81,7 @@ module.exports = {
     },
 
     {
-      img: require('./images/Fuelcell/Preview.png'),
+      img: require('./assets/Fuelcell/Preview.png'),
       title: 'FUEL CELL PROJECT',
       dialogTitle: 'Fuel Cell Project',
       technologies: 'TI LaunchPad, Code Blocks',
@@ -90,7 +90,7 @@ module.exports = {
       projectLink: 'https://github.com/jasonkiim/Autonomous-Fuel-Cell'
     },
     {
-      img: require('./images/MindBound/Preview.png'),
+      img: require('./assets/MindBound/Preview.png'),
       title: 'MEMORY BOUND',
       dialogTitle: 'Memory Bound (Calendar Application)',
       technologies: 'Java, Object-Oriented Programming, Eclipse IDE',
@@ -98,7 +98,7 @@ module.exports = {
         'This project is a user-friendly calender application built using Object-Oriented Programming techniques in Java that allows personal log-in credentials via data encryption with a real-time built-in reminder function accomplished by multithreading. Each users are able to create events by a to-do-list addon on the calendar. This was approached via LinkedLists and Inheritance. The calendar itself was designed using hitboxes of 2D arrays, and the calendar data, such as Years, Months, were approached via Inheritance, LinkedLists, and manipulation of text files.'
     },
     {
-      img: require('./images/PushBox/Preview.png'),
+      img: require('./assets/PushBox/Preview.png'),
       title: 'PUSHBOX',
       dialogTitle: 'Remake of famous classic game, PushBox',
       technologies: 'Java, Eclipse IDE',
@@ -107,7 +107,7 @@ module.exports = {
       projectLink: 'https://github.com/jasonkiim/PushBox'
     },
     {
-      img: require('./images/Bonkers/Preview.png'),
+      img: require('./assets/Bonkers/Preview.png'),
       title: 'BONKERS',
       dialogTitle: 'Price is Right, Bonkers',
       technologies: 'Java, Eclipse IDE',
@@ -115,7 +115,7 @@ module.exports = {
         'This was my very second Java game that I created for my Grade 11 Computer Science course (ICS3U). This game is a remake of a famous game from a TV show "The Price is Right", redesigned by myself. The game involves user input and interaction, where the player is shown an incorrect price and is given a chance to correctly deicde whether each digit in the correct price is higher or lower than the one shown. If they get all four digits right, they win a prize.'
     },
     {
-      img: require('./images/Dice/Preview.png'),
+      img: require('./assets/Dice/Preview.png'),
       title: 'DICE GAME',
       dialogTitle: 'Price is Right, Dice Game',
       technologies: 'Java, Eclipse IDE',
