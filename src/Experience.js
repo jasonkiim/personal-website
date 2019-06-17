@@ -22,15 +22,28 @@ const ExperienceLayout = createReactClass({
     return experienceList.map(item => (
       <div className={styles.experienceContainer}>
         <div className={flexStyles.flexRow}>
-          <div className={classNames(flexStyles.flexHalf)}>
+          <div className={classNames(flexStyles.flexHalfLeft)}>
             <div className={styles.listItemImageWrapper}>
               <img alt={item.title} src={item.img} />
             </div>
           </div>
-          <div className={classNames(flexStyles.flexHalf, styles.rightHalf)}>
-            {item.description_1} {item.description_2}
-            {item.description_3}
-            {item.description_4}
+          <div
+            className={classNames(flexStyles.flexHalfRight, styles.rightHalf)}
+          >
+            <div className={styles.companyName}>{item.companyName}</div>
+            <div className={styles.jobTitle}>
+              <span>{item.jobTitle}</span>
+              <span className={styles.fromTo}>{item.fromTo}</span>
+            </div>
+            <div className={styles.descriptions}>
+              <p>{item.description_1}</p>
+              <br />
+              <p>{item.description_2}</p>
+              <br />
+              <p>{item.description_3}</p>
+              <br />
+              <p>{item.description_4}</p>
+            </div>
           </div>
         </div>
       </div>

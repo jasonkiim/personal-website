@@ -18,9 +18,16 @@
   min-width: 0;
 }
 
-.flexHalf {
+.flexHalfLeft {
   box-sizing: border-box;
   flex-grow: 1;
   padding: 0 0.75rem;
-  width: 50%;
+  width: 40%;
+}
+
+.flexHalfRight {
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 0 0.75rem;
+  width: 60%;
 }

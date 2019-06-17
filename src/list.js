@@ -1,28 +1,54 @@
 module.exports = {
   experienceList: [
     {
-      img: require('./images/chefhero.jpg'),
-      title: 'CHEFHERO',
-      job: 'Full Stack Software Engineer',
+      img: require('./images/formlabs.png'),
+      companyName: 'Formlabs',
+      jobTitle: 'Full Stack Developer Intern',
+      fromTo: 'Sep 2018 - Sep 2019',
       description_1:
-        '• Designed and developed an interactive sign-up page for new customers in React.js & Redux from scratch, reducing customer onboarding process by 67%',
+        'Shipped Formlabs Developer API as containerized service - designed Django based REST API, created multi-environment server settings for OAuth 2, rate limit, and memcaching, and configured Kubernetes models for pod connections, Ingress, and load balancing ',
       description_2:
-        '• Created and modified necessary API endpoints to provide a 26% faster front-end to back-end communication',
+        'Shipped remote print feature for Formlabs API - developed data pipeline between printers, the API, and in-house software services, as well created custom Python based AWS Lambda operator to automate print job uploads and validations to AWS S3',
       description_3:
-        '• Refactored the company website UI using React.js by minifying and componentizing a Jinja based legacy codebase',
-      description_4:
-        '• Integrated analytics architecture using Google Analytics, and a live Intercom chatbot to provide interactive user feedback'
+        'Integrated Kafka into core web infrastructure - streamlined printer requests into multiple Kafka topics, created core consumer group for data consumption to the API, as well centralized Kafka Connect instance from Kafka to production Amazon RDS database'
     },
     {
-      img: require('./images/roguewave.jpg'),
-      title: 'ROGUE WAVE SOFTWARE',
-      job: 'Automation Developer',
+      img: require('./images/ecobee.png'),
+      companyName: 'ecobee',
+      jobTitle: 'Full Stack Developer Intern',
+      fromTo: 'Jan 2018 - April 2018',
       description_1:
-        '• Optimized error triggering points in automation tests written in C++ and Python to decrease its execution time by 23%',
+        'Developed advanced filter feature for ElasticSearch based search engine, enabling pre-filtered data streams from Kafka clusters to in-house microservices via Kafka Stream',
       description_2:
-        '• Developed 7 new virtual test machines of Mac OSX, Solaris, and AIX, increasing test coverage and product stability ',
+        'Integrated OAuth 2 flow between high-traffic microservices and created secured data pipelines to AWS S3 via signed URLs in Java',
       description_3:
-        '• Architected test failure per-build comparison tool using TestLink API, currently in use by 20+ employees',
+        'Implemented metrics monitoring system by constructing JMX, Prometheus, and Grafana instances as part of Docker containers'
+    },
+    {
+      img: require('./images/chefhero.png'),
+      companyName: 'ChefHero',
+      jobTitle: 'Full Stack Developer Intern',
+      fromTo: 'May 2017 - Aug 2017',
+      description_1:
+        'Designed and developed an interactive sign-up page for new customers in React.js & Redux from scratch, reducing customer onboarding process by 67%',
+      description_2:
+        'Created and modified necessary API endpoints to provide a 26% faster front-end to back-end communication',
+      description_3:
+        'Refactored the company website UI using React.js by minifying and componentizing a Jinja based legacy codebase',
+      description_4:
+        'Integrated analytics architecture using Google Analytics, and a live Intercom chatbot to provide interactive user feedback'
+    },
+    {
+      img: require('./images/roguewave.png'),
+      companyName: 'Rogue Wave Software',
+      jobTitle: 'Automation QA Developer Intern',
+      fromTo: 'Sep 2016 - Dec 2016',
+      description_1:
+        'Optimized error triggering points in automation tests written in C++ and Python to decrease its execution time by 23%',
+      description_2:
+        'Developed 7 new virtual test machines of Mac OSX, Solaris, and AIX, increasing test coverage and product stability ',
+      description_3:
+        'Architected test failure per-build comparison tool using TestLink API, currently in use by 20+ employees',
       description_4: ''
     }
   ],
