@@ -10,5 +10,5 @@ TODO:
 - [ ] Finalize mobile view rendering
 - [ ] Finalize variables used in the code
 - [ ] Clean up unused states/props
-- [ ] Fix favicon
+- [x] Fix favicon
 - [ ] Add redirect logic after claiming a custom domain
