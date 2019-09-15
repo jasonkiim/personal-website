@@ -379,14 +379,12 @@ img,
 }
 
 @media only screen and (max-width: 768px) {
-  .stepper-main-faded {
-    top: 35%;
-  }
-
-  .home-faded {
-    top: 35%;
+  .icon {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.5rem;
   }
 }
+
 @media only screen and (max-width: 425px) {
   .exp-projects-container-faded {
     width: 100%;

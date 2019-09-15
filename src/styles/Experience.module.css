@@ -34,3 +34,23 @@
 .descriptions {
   margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .listItemImageWrapper {
+    position: relative;
+    padding-bottom: 2rem;
+  }
+
+  .fromTo {
+    float: left;
+    display: block;
+  }
+
+  .jobTitle {
+    display: block;
+  }
+
+  .descriptions {
+    margin-top: 1rem;
+  }
+}
