@@ -54,6 +54,14 @@ module.exports = {
   ],
   projectList: [
     {
+      img: require('./assets/LoopLabs/LoopLabs.jpg'),
+      projectName: 'LoopLabs',
+      technologies: 'Technologies: Python',
+      description:
+        'A custom made modular looper with buttons and pedals working as a series of MIDI inputs completed as part of a 2 day Hackathon project. Lead developer of the Python based looper software with features including: Start/stop recording based on MIDI signal trigger, gapless playback of up to 4 loops using multithreading.',
+      projectLink: 'https://github.com/jprodgers/LoopLabs'
+    },
+    {
       img: require('./assets/emotiontunes.png'),
       projectName: 'EmotionTunes',
       technologies: 'Technologies: Javascript (React), Material UI, Meteor.js',
